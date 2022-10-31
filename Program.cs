@@ -13,7 +13,7 @@ namespace MiniBankApp
             Console.WriteLine("2: Set your password");
             Console.WriteLine("3: Set your pin");
             Console.WriteLine("4: Enter Your email address");
-            AccountDetails AccountDetails = new AccountDetails();
+            AccountDetails accountDetails = new AccountDetails();
             Account account = new Account();
             while (true)
             {
