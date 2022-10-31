@@ -5,7 +5,7 @@ using System.Security.Principal;
 
 namespace MiniBankApp
 {
-    internal class Program
+    public class Program
     {
         static void Main()
         {
