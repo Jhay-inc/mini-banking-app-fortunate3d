@@ -10,7 +10,7 @@ namespace BankingApp
     {
         public Account(decimal initialDeposit = 0)
         {
-            Balance = 1000 + initialDeposit;
+            AccountBalance = 1000 + initialDeposit;
             string acctNum = "";
             string firstTwo = "07";
             string nextSix = DateTime.Now.ToString("yyMMdd");
@@ -19,8 +19,8 @@ namespace BankingApp
             acctNum = firstTwo + nextSix + LastTwo;
 
             }
-        public string Number { get; set; }
+        public string AccountNumber { get; set; }
         public string TransactionPin { get; set; }
-        public decimal Balance { get; set; }
+        public decimal AccountBalance { get; set; }
     }
 }
