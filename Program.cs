@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Security.Principal;
 
-namespace MiniBankApp
+namespace BankingApp
 {
     public class Program
     {
@@ -18,8 +18,8 @@ namespace MiniBankApp
             while (true)
             {
                 string number = Console.ReadLine();
-                var user = accountDetails.UserDetails.Where(u => u.BankAccount.Number == number).FirstOrDefault();
-                Console.WriteLine($"User with name {user.FirstName} {user.LastName} has {user.BankAccount.Balance}");
+                var user = accountDetails.UserDetails.Where(u => u.BankAccount.AccountNumber == number).FirstOrDefault();
+                Console.WriteLine($"User with name {user.FirstName} {user.LastName} has {user.BankAccount.AccountBalance}");
             }
         }
     }
