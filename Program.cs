@@ -13,12 +13,12 @@ namespace MiniBankApp
             Console.WriteLine("2: Set your password");
             Console.WriteLine("3: Set your pin");
             Console.WriteLine("4: Enter Your email address");
-            AccountDetails anAccountDetails = new AccountDetails();
+            AccountDetails AccountDetails = new AccountDetails();
             Account account = new Account();
             while (true)
             {
                 string number = Console.ReadLine();
-                var user = anAccountDetails.UserDetails.Where(u => u.BankAccount.Number == number).FirstOrDefault();
+                var user = AccountDetails.UserDetails.Where(u => u.BankAccount.Number == number).FirstOrDefault();
                 Console.WriteLine($"User with name {user.FirstName} {user.LastName} has {user.BankAccount.Balance}");
             }
         }
