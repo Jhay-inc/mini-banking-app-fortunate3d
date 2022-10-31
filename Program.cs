@@ -18,7 +18,7 @@ namespace MiniBankApp
             while (true)
             {
                 string number = Console.ReadLine();
-                var user = AccountDetails.UserDetails.Where(u => u.BankAccount.Number == number).FirstOrDefault();
+                var user = accountDetails.UserDetails.Where(u => u.BankAccount.Number == number).FirstOrDefault();
                 Console.WriteLine($"User with name {user.FirstName} {user.LastName} has {user.BankAccount.Balance}");
             }
         }
